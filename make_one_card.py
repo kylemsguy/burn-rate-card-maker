@@ -128,7 +128,15 @@ def main():
     make = raw_input("(Y/n): ")
 
     if make == "y" or make == "Y" or make == "":
-        makecard(offdef, department, skill_levels, cost, description, template)
+        location = raw_input("Location of cards (default cards.xml): ")
+        if not location:
+            location = "cards.xml"
+        try:
+            card_deck = load_cards(location)
+        except IOError:
+            pass
+        makecard(card_deck, offdef, department, skill_levels, cost,
+                 description, template)
     else:
         print "Cancelled. ",
 
