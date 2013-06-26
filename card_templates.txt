@@ -1,0 +1,14 @@
+Templates:
+	0 = empty
+	1 = Bad Idea
+	2 = Bad Hire
+	3 = Poach
+	11 = Release
+	12 = Fire
+	13 = Hire
+	14 = Funding
+	20 = New Business Plan
+	22 = Conflict of Opinion
+	23 = Out to Pasture
+	24 = Layoffs
+	
